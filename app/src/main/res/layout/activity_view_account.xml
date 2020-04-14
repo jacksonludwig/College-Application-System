@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E4046"
+    tools:context=".ViewAccountActivity">
+
+    <TextView
+        android:id="@+id/email_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="email_placeholder"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstname_title_textview"
+        app:layout_constraintEnd_toEndOf="@+id/email_title_textview"
+        app:layout_constraintStart_toStartOf="@+id/email_title_textview"
+        app:layout_constraintTop_toBottomOf="@+id/email_title_textview" />
+
+    <TextView
+        android:id="@+id/firstname_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="firstName_placeholder"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lastname_title_textview"
+        app:layout_constraintEnd_toEndOf="@+id/firstname_title_textview"
+        app:layout_constraintStart_toStartOf="@+id/firstname_title_textview"
+        app:layout_constraintTop_toBottomOf="@+id/firstname_title_textview" />
+
+    <TextView
+        android:id="@+id/lastname_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="lastName_placeholder"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/math_title_textview"
+        app:layout_constraintEnd_toEndOf="@+id/lastname_title_textview"
+        app:layout_constraintStart_toStartOf="@+id/lastname_title_textview"
+        app:layout_constraintTop_toBottomOf="@+id/lastname_title_textview" />
+
+    <TextView
+        android:id="@+id/math_textview"
+        android:layout_width="155dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="math_placeholder"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reading_title_textview"
+        app:layout_constraintEnd_toEndOf="@+id/math_title_textview"
+        app:layout_constraintStart_toStartOf="@+id/math_title_textview"
+        app:layout_constraintTop_toBottomOf="@+id/math_title_textview" />
+
+    <TextView
+        android:id="@+id/reading_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="reading_placeholder"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/reading_title_textview"
+        app:layout_constraintStart_toStartOf="@+id/reading_title_textview"
+        app:layout_constraintTop_toBottomOf="@+id/reading_title_textview" />
+
+    <TextView
+        android:id="@+id/email_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+        android:id="@+id/firstname_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/first_name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/firstname_textview"
+        app:layout_constraintEnd_toEndOf="@+id/email_textview"
+        app:layout_constraintStart_toStartOf="@+id/email_textview"
+        app:layout_constraintTop_toBottomOf="@+id/email_textview" />
+
+    <TextView
+        android:id="@+id/lastname_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/last_name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lastname_textview"
+        app:layout_constraintEnd_toEndOf="@+id/firstname_textview"
+        app:layout_constraintStart_toStartOf="@+id/firstname_textview"
+        app:layout_constraintTop_toBottomOf="@+id/firstname_textview" />
+
+    <TextView
+        android:id="@+id/math_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/math_score"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/math_textview"
+        app:layout_constraintEnd_toEndOf="@+id/lastname_textview"
+        app:layout_constraintStart_toStartOf="@+id/lastname_textview"
+        app:layout_constraintTop_toBottomOf="@+id/lastname_textview" />
+
+    <TextView
+        android:id="@+id/reading_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/reading_score"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reading_textview"
+        app:layout_constraintEnd_toEndOf="@+id/math_textview"
+        app:layout_constraintStart_toStartOf="@+id/math_textview"
+        app:layout_constraintTop_toBottomOf="@+id/math_textview" />
+
+    <Button
+        android:id="@+id/edit_firstname_button"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="editAccount"
+        android:text="@string/edit_text"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/email_textview"
+        app:layout_constraintEnd_toStartOf="@+id/email_title_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/email_title_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#2B2F38"
+    app:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:animateLayoutChanges="true"
+        android:background="#3B404B">
+
+        <TextView
+            android:id="@+id/collegeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/andada"
+            android:maxLines="3"
+
+            android:paddingLeft="5dp"
+            android:paddingTop="16dp"
+
+            android:paddingBottom="12dp"
+            android:text="College Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collegeTitle"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@id/idLabel"
+            android:paddingLeft="20dp"
+            android:text="id"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/idLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collegeTitle"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="IPEDS ID:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/stateLabel"
+            android:paddingLeft="20dp"
+            android:text="state"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/stateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="serif"
+            android:text="State:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/cityLabel"
+            android:paddingLeft="20dp"
+            android:text="city"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/cityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="serif"
+            android:text="City:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/cityLabel"
+            android:paddingLeft="20dp"
+            android:text="zip"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="ZIP:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zip"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/zipLabel"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:text="url"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/urlLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zip"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="URL:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/inStateTuition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/url"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/inStateTuitionLabel"
+            android:paddingLeft="20dp"
+            android:text="in state tuition"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/inStateTuitionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/url"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="In-state tuition:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/outOfStateTuition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inStateTuition"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@id/outOfStateTuitionLabel"
+            android:paddingLeft="20dp"
+            android:text="out of state tuition"
+            android:textAllCaps="false"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/outOfStateTuitionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inStateTuition"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="Out-of-state tuition:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/reading25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outOfStateTuition"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@id/reading25Label"
+            android:paddingLeft="20dp"
+            android:text="reading 25th percentile"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/reading25Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outOfStateTuition"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="SAT Reading 25th Percentile:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/reading75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reading25"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@id/reading75Label"
+            android:paddingLeft="20dp"
+            android:text="reading 75th percentile"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/reading75Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reading25"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="SAT Reading 75th Percentile:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/math25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reading75"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/math25Label"
+            android:paddingLeft="20dp"
+            android:text="math 25th percentile"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/math25Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reading75"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="SAT Math 25th Percentile:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/math75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/math25"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/math25Label"
+            android:paddingLeft="20dp"
+            android:text="math 75th percentile"
+            android:textColor="#EEFFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/math75Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/math25"
+            android:layout_alignParentStart="true"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+
+            android:paddingBottom="16dp"
+
+            android:text="SAT Math 75th Percentile:"
+            android:textColor="#EEFFFFFF"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

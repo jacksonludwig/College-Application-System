@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B3D49"
+    tools:context=".MainSearchMenuActivity">
+
+    <Button
+        android:id="@+id/name_search"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="openNameSearchInput"
+        android:text="@string/search_by_name"
+        app:layout_constraintBottom_toTopOf="@+id/id_search"
+        app:layout_constraintEnd_toEndOf="@+id/id_search"
+        app:layout_constraintStart_toStartOf="@+id/id_search"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/state_search"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="openNameStateSearchInput"
+        android:text="@string/search_by_state"
+        app:layout_constraintEnd_toEndOf="@+id/id_search"
+        app:layout_constraintStart_toStartOf="@+id/id_search"
+        app:layout_constraintTop_toBottomOf="@+id/id_search"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/view_favorites"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="openFavoritesView"
+        android:text="@string/view_favorites"
+        app:layout_constraintEnd_toEndOf="@+id/edit_account"
+        app:layout_constraintStart_toStartOf="@+id/edit_account"
+        app:layout_constraintTop_toBottomOf="@+id/edit_account"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/update_database"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="updateDatabase"
+        android:text="@string/updateDatabse"
+        app:layout_constraintEnd_toEndOf="@+id/view_favorites"
+        app:layout_constraintStart_toStartOf="@+id/view_favorites"
+        app:layout_constraintTop_toBottomOf="@+id/view_favorites"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/edit_account"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:onClick="openAccountView"
+        android:text="@string/view_account"
+        app:layout_constraintBottom_toTopOf="@+id/view_favorites"
+        app:layout_constraintEnd_toEndOf="@+id/state_search"
+        app:layout_constraintStart_toStartOf="@+id/state_search"
+        app:layout_constraintTop_toBottomOf="@+id/state_search"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/id_search"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:onClick="openNameIDSearchInput"
+        android:text="@string/search_by_id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".31"
+        app:layout_constraintWidth_percent=".5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

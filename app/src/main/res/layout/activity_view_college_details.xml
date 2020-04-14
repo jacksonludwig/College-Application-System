@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_account_popup_bg"
+    tools:context=".ViewCollegeDetailsActivity">
+
+    <TextView
+        android:id="@+id/college_title_details"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="College Scores"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/user_math"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="serif"
+        android:text="Math"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/math_scores"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/math_scores"
+        app:layout_constraintTop_toBottomOf="@+id/math_scores" />
+
+    <TextView
+        android:id="@+id/user_reading_score"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="777"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/user_reading"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/user_reading"
+        app:layout_constraintTop_toBottomOf="@+id/user_reading" />
+
+    <TextView
+        android:id="@+id/label_75_2"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="75"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/college_math75"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/college_math75"
+        app:layout_constraintTop_toBottomOf="@+id/college_math75" />
+
+    <TextView
+        android:id="@+id/college_math25"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="777"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/college_math75"
+        app:layout_constraintEnd_toStartOf="@+id/college_math75"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/college_reading75"
+        app:layout_constraintTop_toTopOf="@+id/college_math75"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/college_reading25"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="777"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/college_reading75"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <TextView
+        android:id="@+id/college_id_details"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:text="placeholder_id"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/college_name"
+        app:layout_constraintEnd_toEndOf="@+id/college_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/college_name" />
+
+    <TextView
+        android:id="@+id/college_reading75"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="777"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/college_reading25"
+        app:layout_constraintEnd_toStartOf="@+id/college_math25"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/college_reading25"
+        app:layout_constraintTop_toTopOf="@+id/college_reading25"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label_25_1"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/college_reading25"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/college_reading25"
+        app:layout_constraintTop_toBottomOf="@+id/college_reading25" />
+
+    <TextView
+        android:id="@+id/math_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="serif"
+        android:text="Math"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/college_math75"
+        app:layout_constraintEnd_toStartOf="@+id/college_math75"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/college_math25" />
+
+    <TextView
+        android:id="@+id/user_math_score"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="777"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/user_math"
+        app:layout_constraintStart_toStartOf="@+id/user_math"
+        app:layout_constraintTop_toBottomOf="@+id/user_math" />
+
+    <TextView
+        android:id="@+id/label_25_2"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/college_math25"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/college_math25"
+        app:layout_constraintTop_toBottomOf="@+id/college_math25" />
+
+    <TextView
+        android:id="@+id/status_chance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="FETCHING..."
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/status_label"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/status_label"
+        app:layout_constraintTop_toBottomOf="@+id/status_label" />
+
+    <TextView
+        android:id="@+id/label_75_1"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="75"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/college_reading75"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/college_reading75"
+        app:layout_constraintTop_toBottomOf="@+id/college_reading75" />
+
+    <TextView
+        android:id="@+id/status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Your Status:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/user_scores"
+        app:layout_constraintStart_toStartOf="@+id/user_scores"
+        app:layout_constraintTop_toBottomOf="@+id/user_scores" />
+
+    <TextView
+        android:id="@+id/college_math75"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="777"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/college_math25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <TextView
+        android:id="@+id/college_name"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="placeholder_name"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/college_title_details"
+        app:layout_constraintEnd_toEndOf="@+id/college_title_details"
+        app:layout_constraintStart_toStartOf="@+id/college_title_details" />
+
+    <TextView
+        android:id="@+id/user_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="serif"
+        android:text="Reading"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/reading_scores"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/reading_scores"
+        app:layout_constraintTop_toBottomOf="@+id/reading_scores" />
+
+    <TextView
+        android:id="@+id/user_scores"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Your Scores"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/college_title_details"
+        app:layout_constraintStart_toStartOf="@+id/college_title_details"
+        app:layout_constraintTop_toBottomOf="@+id/college_title_details" />
+
+    <TextView
+        android:id="@+id/reading_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="serif"
+        android:text="Reading"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/college_reading25"
+        app:layout_constraintEnd_toStartOf="@+id/college_reading75"
+        app:layout_constraintStart_toEndOf="@+id/college_reading25" />
+
+    <Button
+        android:id="@+id/add_to_fav_button"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="addToFavorites"
+        android:text="Add to Favorites"
+        app:layout_constraintBottom_toTopOf="@+id/college_id_details"
+        app:layout_constraintEnd_toEndOf="@+id/college_id_details"
+        app:layout_constraintStart_toStartOf="@+id/college_id_details" />
+
+    <Button
+        android:id="@+id/delete_from_fav_button"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="#774E0F0D"
+        android:onClick="removeFromFavorites"
+        android:text="Delete From Favorites"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/college_id_details"
+        app:layout_constraintEnd_toEndOf="@+id/college_id_details"
+        app:layout_constraintStart_toStartOf="@+id/college_id_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#464958"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login_welcome_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_welcome_title"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/login_welcomesubtitle_textview"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/login_welcome_text"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="@+id/login_welcome_textview"
+        app:layout_constraintStart_toStartOf="@+id/login_welcome_textview"
+        app:layout_constraintTop_toBottomOf="@+id/login_welcome_textview"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="139dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="50dp"
+        android:onClick="createSignInIntent"
+        android:text="@string/login_button_text"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/login_welcomesubtitle_textview"
+        app:layout_constraintStart_toStartOf="@+id/login_welcomesubtitle_textview"
+        app:layout_constraintTop_toBottomOf="@+id/login_welcomesubtitle_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

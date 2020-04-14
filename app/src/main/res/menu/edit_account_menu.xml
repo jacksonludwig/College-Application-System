@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/editFirst"
+        android:title="@string/first_name_menu" />
+
+    <item
+        android:id="@+id/editLast"
+        android:title="@string/last_name_menu" />
+
+    <item
+        android:id="@+id/editMath"
+        android:title="@string/math_score_menu" />
+
+    <item
+        android:id="@+id/editReading"
+        android:title="@string/reading_score_menu" />
+
+</menu>

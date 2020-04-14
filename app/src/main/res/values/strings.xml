@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">College Application System</string>
+    <string name="login_welcome_title">Welcome.</string>
+    <string name="login_welcome_text">Click the login button to sign in to an existing account or create a new one.</string>
+    <string name="login_button_text">LOGIN AS USER</string>
+    <string name="login_button_text_guest">LOGIN AS GUEST</string>
+    <string name="add_to_fav">save favorite</string>
+    <string name="search_by_name">Search by College Name</string>
+    <string name="search_by_id">Search by College ID</string>
+    <string name="search_by_state">Search by State</string>
+    <string name="search_by_scores">Search by SAT scores</string>
+    <string name="view_account">View account</string>
+    <string name="view_favorites">View favorites</string>
+    <string name="email">Email:</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="math_score">SAT Math Score:</string>
+    <string name="reading_score">SAT Reading Score:</string>
+    <string name="edit_text">edit</string>
+    <string name="first_name_menu">first name</string>
+    <string name="last_name_menu">last name</string>
+    <string name="math_score_menu">math score</string>
+    <string name="reading_score_menu">reading score</string>
+    <string name="first_name_prompt">First Name</string>
+    <string name="last_name_prompt">Last Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="updateDatabse">Update database</string>
+</resources>
