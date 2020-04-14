@@ -50,4 +50,5 @@ After adding favorites from any of the search menus, you can view them by clicki
 
 You may delete a college from your favorites by clicking on it and then clicking the "delete from favorites" button.
 ___
-CSE248 Final Project - Jackson Ludwig
+
+To find commit history, see https://github.com/ludwj61/CSE248/tree/master/CollegeApplicationSystem
